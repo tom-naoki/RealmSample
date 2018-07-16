@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1D81C9535FBF72CC84C24475 /* Pods_RealmSumple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7CBAB0EDEF2775FD685D7D /* Pods_RealmSumple.framework */; };
+		A7A1223120FD01B600F3909C /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1223020FD01B600F3909C /* TimeLineViewController.swift */; };
+		A7A1223820FD02C200F3909C /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1223720FD02C200F3909C /* TweetCell.swift */; };
+		A7A1223A20FD02E600F3909C /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1223920FD02E600F3909C /* Tweet.swift */; };
+		A7A1223C20FD02EC00F3909C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1223B20FD02EC00F3909C /* User.swift */; };
+		A7A1223E20FD033200F3909C /* TwitterDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1223D20FD033200F3909C /* TwitterDateFormatter.swift */; };
+		A7A1224020FD035800F3909C /* TwitterJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1223F20FD035800F3909C /* TwitterJSON.swift */; };
 		A7DF0BA320FCAE79004EEA2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DF0BA220FCAE79004EEA2C /* AppDelegate.swift */; };
 		A7DF0BA520FCAE79004EEA2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DF0BA420FCAE79004EEA2C /* ViewController.swift */; };
 		A7DF0BA820FCAE79004EEA2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7DF0BA620FCAE79004EEA2C /* Main.storyboard */; };
@@ -17,6 +23,12 @@
 
 /* Begin PBXFileReference section */
 		4D7D0AD596CCD89468E6D37B /* Pods-RealmSumple.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmSumple.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmSumple/Pods-RealmSumple.debug.xcconfig"; sourceTree = "<group>"; };
+		A7A1223020FD01B600F3909C /* TimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
+		A7A1223720FD02C200F3909C /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
+		A7A1223920FD02E600F3909C /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		A7A1223B20FD02EC00F3909C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A7A1223D20FD033200F3909C /* TwitterDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterDateFormatter.swift; sourceTree = "<group>"; };
+		A7A1223F20FD035800F3909C /* TwitterJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterJSON.swift; sourceTree = "<group>"; };
 		A7DF0B9F20FCAE79004EEA2C /* RealmSumple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmSumple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7DF0BA220FCAE79004EEA2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7DF0BA420FCAE79004EEA2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +69,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A7A1222F20FD019C00F3909C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7A1223020FD01B600F3909C /* TimeLineViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A7A1223220FD027200F3909C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7A1223720FD02C200F3909C /* TweetCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A7A1223320FD027F00F3909C /* RealmModel */ = {
+			isa = PBXGroup;
+			children = (
+				A7A1223920FD02E600F3909C /* Tweet.swift */,
+				A7A1223B20FD02EC00F3909C /* User.swift */,
+			);
+			path = RealmModel;
+			sourceTree = "<group>";
+		};
+		A7A1223420FD029300F3909C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A7A1223D20FD033200F3909C /* TwitterDateFormatter.swift */,
+				A7A1223F20FD035800F3909C /* TwitterJSON.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		A7DF0B9620FCAE79004EEA2C = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +130,10 @@
 				A7DF0BA920FCAE79004EEA2C /* Assets.xcassets */,
 				A7DF0BAB20FCAE79004EEA2C /* LaunchScreen.storyboard */,
 				A7DF0BAE20FCAE79004EEA2C /* Info.plist */,
+				A7A1222F20FD019C00F3909C /* Controllers */,
+				A7A1223220FD027200F3909C /* View */,
+				A7A1223320FD027F00F3909C /* RealmModel */,
+				A7A1223420FD029300F3909C /* Common */,
 			);
 			path = RealmSumple;
 			sourceTree = "<group>";
@@ -220,7 +270,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7DF0BA520FCAE79004EEA2C /* ViewController.swift in Sources */,
+				A7A1224020FD035800F3909C /* TwitterJSON.swift in Sources */,
+				A7A1223A20FD02E600F3909C /* Tweet.swift in Sources */,
+				A7A1223C20FD02EC00F3909C /* User.swift in Sources */,
 				A7DF0BA320FCAE79004EEA2C /* AppDelegate.swift in Sources */,
+				A7A1223E20FD033200F3909C /* TwitterDateFormatter.swift in Sources */,
+				A7A1223120FD01B600F3909C /* TimeLineViewController.swift in Sources */,
+				A7A1223820FD02C200F3909C /* TweetCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
