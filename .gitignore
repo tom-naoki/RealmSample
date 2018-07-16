@@ -1,0 +1,11 @@
+**Build generated
+build/
+DerivedData/
+
+## Carthage
+Carthage/Checkouts
+!Carthage/Build
+
+/.bundle
+/vendor/bundle
+/Pods
