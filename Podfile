@@ -6,5 +6,6 @@ target 'RealmSumple' do
   use_frameworks!
 
   # Pods for RealmSumple
+  pod 'RealmSwift'
 
 end
