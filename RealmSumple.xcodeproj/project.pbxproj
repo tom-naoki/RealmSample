@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D81C9535FBF72CC84C24475 /* Pods_RealmSumple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7CBAB0EDEF2775FD685D7D /* Pods_RealmSumple.framework */; };
 		A7DF0BA320FCAE79004EEA2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DF0BA220FCAE79004EEA2C /* AppDelegate.swift */; };
 		A7DF0BA520FCAE79004EEA2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DF0BA420FCAE79004EEA2C /* ViewController.swift */; };
 		A7DF0BA820FCAE79004EEA2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7DF0BA620FCAE79004EEA2C /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D7D0AD596CCD89468E6D37B /* Pods-RealmSumple.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmSumple.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmSumple/Pods-RealmSumple.debug.xcconfig"; sourceTree = "<group>"; };
 		A7DF0B9F20FCAE79004EEA2C /* RealmSumple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmSumple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7DF0BA220FCAE79004EEA2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7DF0BA420FCAE79004EEA2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		A7DF0BA920FCAE79004EEA2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7DF0BAC20FCAE79004EEA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7DF0BAE20FCAE79004EEA2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD7CBAB0EDEF2775FD685D7D /* Pods_RealmSumple.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmSumple.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F162E65E65F3134EBD4864CC /* Pods-RealmSumple.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmSumple.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmSumple/Pods-RealmSumple.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D81C9535FBF72CC84C24475 /* Pods_RealmSumple.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32703BC00F5F053040638C86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D7D0AD596CCD89468E6D37B /* Pods-RealmSumple.debug.xcconfig */,
+				F162E65E65F3134EBD4864CC /* Pods-RealmSumple.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3343AAD212C55CB318D07EF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD7CBAB0EDEF2775FD685D7D /* Pods_RealmSumple.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A7DF0B9620FCAE79004EEA2C = {
 			isa = PBXGroup;
 			children = (
 				A7DF0BA120FCAE79004EEA2C /* RealmSumple */,
 				A7DF0BA020FCAE79004EEA2C /* Products */,
+				32703BC00F5F053040638C86 /* Pods */,
+				3343AAD212C55CB318D07EF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7DF0BB120FCAE79004EEA2C /* Build configuration list for PBXNativeTarget "RealmSumple" */;
 			buildPhases = (
+				72688786CE6EB090170600B4 /* [CP] Check Pods Manifest.lock */,
 				A7DF0B9B20FCAE79004EEA2C /* Sources */,
 				A7DF0B9C20FCAE79004EEA2C /* Frameworks */,
 				A7DF0B9D20FCAE79004EEA2C /* Resources */,
+				4C06668D2E2B17F2DD295A8D /* [CP] Embed Pods Frameworks */,
+				C7A0AC5F1000E7F650D3594B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C06668D2E2B17F2DD295A8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmSumple/Pods-RealmSumple-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72688786CE6EB090170600B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealmSumple-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7A0AC5F1000E7F650D3594B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmSumple/Pods-RealmSumple-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A7DF0B9B20FCAE79004EEA2C /* Sources */ = {
@@ -272,6 +350,7 @@
 		};
 		A7DF0BB220FCAE79004EEA2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D7D0AD596CCD89468E6D37B /* Pods-RealmSumple.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +365,7 @@
 		};
 		A7DF0BB320FCAE79004EEA2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F162E65E65F3134EBD4864CC /* Pods-RealmSumple.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
